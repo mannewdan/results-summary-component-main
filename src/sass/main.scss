@@ -1,0 +1,11 @@
+@use "colors";
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("HankenGrotesk-VariableFont_wght.ttf");
+}
+
+html {
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
