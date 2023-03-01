@@ -89,9 +89,27 @@
   font-weight: 600;
   font-size: 1rem;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(224, 30%, 27%);
   border-radius: 100px;
   border: none;
+  margin-bottom: 1.5em;
+  background-color: hsl(224, 30%, 27%);
+  transition: background-color 200ms;
+  cursor: pointer;
+  position: relative;
+}
+.summary__continue-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(252, 100%, 67%) -20%, hsl(241, 81%, 54%));
+  border-radius: 100px;
+}
+.summary__continue-button:hover {
+  background-color: rgba(48, 59, 90, 0);
 }
 
 .subscore {
