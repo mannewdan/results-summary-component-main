@@ -6,16 +6,17 @@ type SummaryProps = {
 };
 
 export default function Summary({ data }: SummaryProps) {
+  const subscoreEls = data.map((item) => {
+    return <Subscore key={item.category} data={item} />;
+  });
+
   return (
     <div className="summary">
-      <span className="summary__heading">Summary</span>
+      <p className="summary__heading">Summary</p>
 
-      <Subscore data={data[0]} />
-      <Subscore data={data[1]} />
-      <Subscore data={data[2]} />
-      <Subscore data={data[3]} />
+      <div className="summary__score-container">{subscoreEls}</div>
 
-      <button>Continue</button>
+      <button className="summary__continue-button">Continue</button>
     </div>
   );
 }

@@ -1,0 +1,27 @@
+@use "colors" as *;
+
+.subscore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1em;
+  border-radius: 8px;
+
+  img {
+    margin-right: 0.5em;
+    transform: translateY(3px);
+  }
+
+  &__label {
+    font-weight: 600;
+  }
+  &__score {
+    color: $gray-blue;
+    font-weight: 700;
+  }
+  &__total {
+    color: transparentize($gray-blue, 0.5);
+    font-weight: 700;
+  }
+}

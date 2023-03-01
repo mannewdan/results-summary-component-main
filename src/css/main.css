@@ -1,3 +1,23 @@
+.reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: rgba(255, 87, 87, 0.04);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+  background-color: rgba(255, 176, 31, 0.04);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: rgba(0, 189, 145, 0.04);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+  background-color: rgba(17, 37, 212, 0.04);
+}
+
 .result {
   display: flex;
   flex-direction: column;
@@ -45,6 +65,53 @@
   opacity: 50%;
 }
 
+.summary {
+  width: calc(100% - 3em);
+  margin: 0 auto;
+}
+.summary__heading {
+  font-weight: 700;
+  margin: 1.25em 0;
+}
+.summary__score-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.summary__continue-button {
+  width: 100%;
+  padding: 1em;
+  font-weight: 600;
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 100px;
+}
+
+.subscore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-radius: 8px;
+}
+.subscore img {
+  margin-right: 0.5em;
+  transform: translateY(3px);
+}
+.subscore__label {
+  font-weight: 600;
+}
+.subscore__score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+.subscore__total {
+  color: rgba(48, 59, 90, 0.5);
+  font-weight: 700;
+}
+
 @font-face {
   font-family: "Hanken Grotesk";
   src: url("HankenGrotesk-VariableFont_wght.ttf");
@@ -56,6 +123,7 @@
 html {
   font-size: 18px;
   font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(224, 30%, 27%);
 }
 
 body {

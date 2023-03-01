@@ -1,5 +1,7 @@
-@use "colors";
+@use "colors" as *;
 @use "result";
+@use "summary";
+@use "subscore";
 
 @font-face {
   font-family: "Hanken Grotesk";
@@ -12,6 +14,7 @@
 html {
   font-size: 18px;
   font-family: "Hanken Grotesk", sans-serif;
+  color: $gray-blue;
 }
 body {
   margin: 0;

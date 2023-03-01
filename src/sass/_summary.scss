@@ -1,0 +1,26 @@
+@use "colors" as *;
+
+.summary {
+  width: calc(100% - 3em);
+  margin: 0 auto;
+
+  &__heading {
+    font-weight: 700;
+    margin: 1.25em 0;
+  }
+  &__score-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1.5em;
+  }
+  &__continue-button {
+    width: 100%;
+    padding: 1em;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $white;
+    background-color: $gray-blue;
+    border-radius: 100px;
+  }
+}
