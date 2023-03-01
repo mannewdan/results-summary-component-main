@@ -2,6 +2,7 @@
 
 .summary {
   width: calc(100% - 3em);
+  max-width: 450px;
   margin: 0 auto;
 
   &__heading {
@@ -22,5 +23,6 @@
     color: $white;
     background-color: $gray-blue;
     border-radius: 100px;
+    border: none;
   }
 }

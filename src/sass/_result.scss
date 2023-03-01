@@ -16,18 +16,20 @@
   border-bottom-right-radius: 30px;
 
   &__heading {
+    font-size: 1rem;
     margin-bottom: 1.25em;
   }
   &__grade {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: $white;
     margin-bottom: 0.5em;
   }
   &__description {
+    font-size: 0.9rem;
     text-align: center;
-    max-width: 320px;
-    margin-bottom: 1em;
+    max-width: 300px;
+    margin-bottom: 0.75em;
   }
   &__score {
     display: flex;
@@ -37,16 +39,17 @@
     margin-bottom: 1.35em;
 
     background-image: linear-gradient($violet-blue, $persian-blue);
-    width: 160px;
+    width: 138px;
     aspect-ratio: 1;
     border-radius: 100px;
 
     &--number {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 700;
       color: $white;
     }
     &--total {
+      font-size: 0.85rem;
       font-weight: 500;
       opacity: 50%;
     }
