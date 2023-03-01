@@ -1,5 +1,11 @@
+import Result from "./component/Result";
+
 function App() {
-  return <>Results Summary Challenge</>;
+  return (
+    <>
+      <Result />
+    </>
+  );
 }
 
 export default App;
