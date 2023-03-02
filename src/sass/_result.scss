@@ -1,4 +1,5 @@
 @use "colors" as *;
+@use "layout" as *;
 
 .result {
   display: flex;
@@ -15,21 +16,40 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
+  @media (min-width: $bp) {
+    height: 510px;
+    border-radius: 30px;
+  }
+
   &__heading {
     font-size: 1rem;
     margin-bottom: 1.25em;
+
+    @media (min-width: $bp) {
+      font-size: 1.25rem;
+      margin-bottom: 1.5em;
+    }
   }
   &__grade {
     font-size: 1.25rem;
     font-weight: 700;
     color: $white;
     margin-bottom: 0.5em;
+
+    @media (min-width: $bp) {
+      font-size: 1.75rem;
+    }
   }
   &__description {
     font-size: 0.9rem;
     text-align: center;
     max-width: 300px;
     margin-bottom: 0.75em;
+
+    @media (min-width: $bp) {
+      font-size: 1rem;
+      max-width: 250px;
+    }
   }
   &__score {
     display: flex;
@@ -43,15 +63,28 @@
     aspect-ratio: 1;
     border-radius: 100px;
 
+    @media (min-width: $bp) {
+      width: 200px;
+    }
+
     &--number {
       font-size: 3rem;
       font-weight: 700;
       color: $white;
+
+      @media (min-width: $bp) {
+        font-size: 4rem;
+      }
     }
     &--total {
       font-size: 0.85rem;
       font-weight: 500;
       opacity: 50%;
+
+      @media (min-width: $bp) {
+        font-size: 1rem;
+        margin-top: -0.5em;
+      }
     }
   }
 }

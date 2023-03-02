@@ -10,10 +10,12 @@ export type DataT = {
 
 function App() {
   return (
-    <>
-      <Result />
-      <Summary data={data} />
-    </>
+    <div className="app-container">
+      <div className="layout">
+        <Result />
+        <Summary data={data} />
+      </div>
+    </div>
   );
 }
 

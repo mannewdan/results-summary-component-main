@@ -1,0 +1,31 @@
+@use "colors" as *;
+
+$bp: 800px;
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  @media (min-width: $bp) {
+    height: 100vh;
+  }
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $bp) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 730px;
+    margin: 0 auto;
+
+    border-radius: 30px;
+    box-shadow: 10px 20px 35px $pale-blue;
+  }
+}

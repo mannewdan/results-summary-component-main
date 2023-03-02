@@ -1,34 +1,53 @@
 @use "colors" as *;
+@use "layout" as *;
 
 .summary {
   width: calc(100% - 3em);
   max-width: 450px;
   margin: 0 auto;
 
+  @media (min-width: $bp) {
+    padding: 0 2em;
+    max-width: 500px;
+  }
+
   &__heading {
-    font-weight: 700;
+    font-weight: 800;
     margin: 1.25em 0;
+
+    @media (min-width: $bp) {
+      font-size: 1.35rem;
+      margin: 0 0 1em 0;
+    }
   }
   &__score-container {
     display: flex;
     flex-direction: column;
     gap: 1em;
     margin-bottom: 1.5em;
+
+    @media (min-width: $bp) {
+      gap: 0.8em;
+    }
   }
   &__continue-button {
     width: 100%;
-    padding: 1em;
-    font-weight: 600;
+    padding: 1.1em;
+    font-weight: 700;
     font-size: 1rem;
     color: $white;
     border-radius: 100px;
     border: none;
     margin-bottom: 1.5em;
+    cursor: pointer;
 
     background-color: $gray-blue;
     transition: background-color 200ms;
 
-    cursor: pointer;
+    @media (min-width: $bp) {
+      margin: 1em 0 0 0;
+      font-size: 0.9em;
+    }
 
     position: relative;
     &::before {
